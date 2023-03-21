@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(210, 229, 245);
+}
+div {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px; 
+    background-color:#426ee7; 
+    width:100px; 
+    padding: 30px 80px 50px 70px;
+    font-size: x-large;
+    font-family: sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+a {
+    line-height: 100px;
+    color: aquamarine;
+}

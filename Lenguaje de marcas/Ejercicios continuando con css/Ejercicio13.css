@@ -1,0 +1,40 @@
+.rectangulo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%) rotate(50deg);
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+    background-size: cover, auto;
+    background-position: center, 50px 50px;
+    background-repeat: no-repeat;
+}
+p {
+    text-align: center;
+    font-size: xx-large;
+    opacity: 30%;
+}
+.tapiz-grande {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagenes/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tapiz-pequena {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 500px;
+    height: 100px;
+    background-image: url(imagenes/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

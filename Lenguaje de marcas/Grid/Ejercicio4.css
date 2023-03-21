@@ -1,0 +1,37 @@
+.contenedor {
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-areas: 
+        "header header header header header"
+        "header header header header header"
+        "izq main main main der"
+        "izq main main main der"
+        "izq main main main der"
+        "footer footer footer footer footer";
+}
+
+.contenedor > :nth-child(1) {
+    grid-area: header;
+    background-color: red;
+}
+
+.contenedor > :nth-child(2) {
+    grid-area: izq;
+    background-color: cyan;
+}
+
+.contenedor > :nth-child(3) {
+    grid-area: main;
+    background-color: orange;
+}
+
+.contenedor > :nth-child(4) {
+    grid-area: der;
+    background-color: green;
+}
+
+.contenedor > :nth-child(5) {
+    grid-area: footer;
+    background-color: blue;

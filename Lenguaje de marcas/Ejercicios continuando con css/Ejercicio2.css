@@ -1,0 +1,11 @@
+div {
+column-width:100px;
+border-radius: 20px; 
+background-color:#ddd; 
+padding:10px;
+}
+.columna{
+    width: 100px;
+    float: left;
+    margin: 5px;
+}

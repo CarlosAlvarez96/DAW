@@ -1,0 +1,17 @@
+@keyframes change-color {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; } 
+    60% { color: green; } 
+    80% { color: blue; } 
+    100% { color: purple; }
+}
+div {
+    width: 200px;
+    height: 100px;
+    border: solid black;
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    font-size: x-large;
+}

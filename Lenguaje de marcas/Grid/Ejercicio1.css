@@ -1,0 +1,24 @@
+ .Padre{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 300px;
+    width: 800px;
+}
+.caja{
+    border: 1px solid black;
+}
+ .azul{
+    background-color: rgb(95, 95, 218);
+    
+}
+ .rojo{
+    background-color: rgb(241, 106, 106);
+    
+
+ }
+ .amarillo{
+    background-color: rgb(251, 251, 128);
+    
+ }

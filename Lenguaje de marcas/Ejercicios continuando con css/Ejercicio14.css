@@ -1,0 +1,18 @@
+div {
+    background-image: 
+    url(imagenes/Logo.png),
+    url(imagenes/Logo.png),
+    url(imagenes/Logo.png),
+    url(imagenes/Imagen.png); 
+    background-position: 
+    0% 50%,
+    50% 50%,
+    100% 50%;
+    background-size: 
+    30px,
+    70px,
+    100px,
+    700px;
+    background-repeat: no-repeat;
+    width:700px; height:450px;
+}

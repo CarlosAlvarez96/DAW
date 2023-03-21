@@ -1,0 +1,16 @@
+.recuadro {
+    width: 100px;
+    height: 200px;
+    border: solid black;
+    color: blue;
+    transition: height 2s , color 3s;
+  }
+  
+  .recuadro:hover {
+    height: 100px;
+    color: red;
+  }
+  
+
+  width: 100px; height: 200px; padding: 10px; color: blue; background-color: hotpink;
+	transition: height 1s ease, width 2s ease 2s, color 3s;

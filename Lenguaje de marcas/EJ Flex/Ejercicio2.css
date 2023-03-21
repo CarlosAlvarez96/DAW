@@ -1,0 +1,28 @@
+#Padre{
+    height: 200px;
+    width: 100%;
+    background: rgb(230, 176, 111);
+    border: solid black;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+
+}
+.Caja1{
+    margin: 1px;
+    width: 200px;
+    height: 100px;
+    border: solid black;
+    background: green;
+    align-self: flex-start;
+}
+.Caja2{
+    margin: 1px;
+    width: 200px;
+    height: 100px;
+    border: solid black;
+    background: green;
+    align-self: flex-end;
+}

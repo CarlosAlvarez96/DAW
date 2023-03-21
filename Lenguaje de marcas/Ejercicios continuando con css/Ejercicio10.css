@@ -1,0 +1,11 @@
+div {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: rotate(30deg);
+    transform-origin: center center;
+    border-radius: 20px; 
+    background-color:#ddd; 
+    width:400px; 
+    padding:10px
+}

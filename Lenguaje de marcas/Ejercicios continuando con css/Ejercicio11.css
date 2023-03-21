@@ -1,0 +1,18 @@
+.bloque1 {
+    position: relative;
+    left: 50px;
+    border-radius: 20px; 
+    background-color:#ddd; 
+    width:200px; 
+    padding:10px
+  }
+  
+  .bloque2 {
+    position: relative;
+    top: 40px;
+    border-radius: 20px; 
+    background-color:#ddd; 
+    width:200px; 
+    padding:10px
+  }
+  

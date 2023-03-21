@@ -1,0 +1,13 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+  }
+
+  div:hover {
+    box-shadow: 10px 10px 5px grey;
+    transition: box-shadow 0.3s;/
+  }

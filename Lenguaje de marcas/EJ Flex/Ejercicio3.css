@@ -1,0 +1,38 @@
+.Padre{
+    background: gray;
+    height: 400px;
+    width: 80%;
+    border: solid black;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fases{
+    height: 62px;
+    width: 150px;
+    background: green;
+    text-align: center;
+    border: solid 1px black;
+    margin: 2px;
+}
+
+.Img{
+    background: gray;
+    height: 62px;
+    width: 150px;
+    border: solid 1px black;
+    margin: 2px;
+}
+
+.letras{
+    height: 70px;
+    width: 250px;
+    background: orange;
+    text-align: center;
+    border: solid 1px black;
+    margin: 35px;
+}

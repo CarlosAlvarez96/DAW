@@ -1,0 +1,10 @@
+div {
+        background-origin: padding-box;
+        border: 20px solid #eee; 
+        padding: 20px;
+        background-color: red;
+        background-image: url(imagenes/Logo.png);
+        background-repeat: no-repeat;
+        width:300px;
+        height:200px;
+}

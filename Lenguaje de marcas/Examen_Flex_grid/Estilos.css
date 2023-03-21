@@ -1,0 +1,45 @@
+*{
+    border: solid 1px black;
+}
+#Contenedor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header header header header header"
+                          "asideIzq main main main asideDer"
+                          "footer footer footer footer footer";
+
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+article{
+    height: 350px;
+}
+article > img{
+    float: left;
+}
+.asideIzquierda{
+    grid-area: asideIzq;
+    display: flex;
+    flex-direction: column;
+
+}
+.asideDerecha{
+    grid-area: asideDer;
+    display: flex;
+    flex-direction: column;
+
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+}

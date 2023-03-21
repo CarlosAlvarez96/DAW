@@ -1,0 +1,174 @@
+*{
+    margin 7px
+}
+img{
+    width: 100%;
+}
+#Contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 70px 350px 300px 70px;
+    grid-template-areas: "header header header"
+                          " Roma Roma aside"
+                          "Grecia GreRep aside"
+                          "footer footer footer";
+    padding: 15px;
+    background-color:  #E9ECF4;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#4163BF;
+    color: white;
+    border-radius: 5px;
+    margin: 7px;
+}
+header > h3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer > h3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Roma{
+    grid-area: Roma;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    background-color:  #96c0d3;
+    margin: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoRoma{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecera{
+    align-self: flex-end;
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+.imagenRoma{
+    width: 950px;
+    justify-content: right;
+    background-color: #D1E0E9;
+    align-items: center;
+    padding: 25px;
+    float: right ;
+}
+.Grecia{
+    grid-area: Grecia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color:  #96c0d3;
+    margin: 7px;
+}
+.textoGrecia{
+    align-self: flex-end;
+}
+section > h1{
+    font-weight: bold;
+    color: white;
+    text-align: right;
+}
+.cajaGrecia{
+    justify-content: center;
+    background-color: #D1E0E9;
+    align-items: center;
+    align-content: center;
+    padding: 25px;
+    
+}
+.fotoGrecia{
+    width: 200px;
+}
+.GreRep{
+    grid-area: GreRep;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:  #96c0d3;
+    margin: 7px;
+}
+.p1{
+    color: white;
+    font-weight: bold;
+    align-self: flex-start;
+}
+.p2{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    align-self: center;
+}
+.p3{
+    color: white;
+    font-weight: bold;
+    align-self: flex-end;
+}
+article > img{
+    float: left;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color:  #96c0d3;
+    margin: 7px;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.Francia{
+    width: 55%;
+    height: 35%;
+    justify-content: right;
+    background-color: #D1E0E9;
+    align-items: center;
+    padding: 25px;
+}
+.Belgica{
+    width: 55%;
+    height: 35%;
+    justify-content: right;
+    background-color: #D1E0E9;
+    align-items: center;
+    padding: 25px;
+}
+.Centrado{
+    text-align: center;
+}
+.alturaFoto{
+    max-height: 80%;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#4163BF;
+    color: white;
+    border-radius: 5px;
+    margin: 7px;
+}
+
