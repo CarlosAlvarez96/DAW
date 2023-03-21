@@ -30,7 +30,7 @@
                 * update: JPA no borra nada, pero modifica la BD según lo crea conveniente (por ejemplo, si necesita crear nuevas tablas)
                 * none: JPA no hace nada e intentará adaptarse a las tablas de una BD ya existente
             -->
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
             <!-- indica si deberá mostrarse en el output el SQL generado por JPA -->
             <property name="hibernate.show_sql" value="true"/>
             <!-- nombre de usuario para acceder a la BD -->

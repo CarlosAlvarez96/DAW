@@ -5,6 +5,7 @@
 package Clases;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.List;
 import java.util.Scanner;
 import javax.persistence.EntityManager;
@@ -16,6 +17,40 @@ import javax.persistence.Query;
  * @author CARLOS
  */
 public class Programa {
+    
+    public static void main(String[] args) {
+        main7(args);
+    }
+    
+    public static void main7(String[] args) {
+        EntityManager em = Persistence.createEntityManagerFactory("CARRERAS").createEntityManager();
+        Corredor c1 = new Corredor("Manuel", LocalDate.of(2000, 2, 12));
+        CorredorAmateur c2 = new CorredorAmateur("Luis", LocalDate.of(1999, 6, 23),29,8);
+        CorredorProfesional c3 = new CorredorProfesional("Ismael", LocalDate.of(2001, 3, 1),1,"IES HLANZ");
+        
+        em.getTransaction().begin();
+        em.persist(c1);
+        em.persist(c2);
+        em.persist(c3);
+        em.getTransaction().commit();
+        em.close();
+    }
+    
+    
+    //Vamos a consultar los corredores con el nombre que el usuario introduzca por teclado usando una TypedQuery(no vulnerable)
+    public static void main6(String[] args) {
+        EntityManager em = Persistence.createEntityManagerFactory("CARRERAS").createEntityManager();
+        System.out.println("Nombre del corredor: ");
+        String nombre = new Scanner(System.in).nextLine();
+        
+        Query consulta = em.createNamedQuery("SELECT c FROM Corredor c WHERE c.name=?1",Corredor.class);
+        consulta.setParameter(1, nombre);
+        List<Corredor> corredores = consulta.getResultList();
+        for(Corredor c : corredores){
+            System.out.println(c.getNombre()+" "+c.getFechaNacimiento());
+        }
+        em.close();
+    }
     // Vamos a modificar el nombre de Arturo a Arturo Manuel
     // Vamos a borrar el objeto con id 2
     public static void main5(String[] args) {

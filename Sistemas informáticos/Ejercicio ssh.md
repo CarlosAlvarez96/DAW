@@ -77,4 +77,36 @@ Y le ponemos la contraseña port
 
 //Con el comando scp copiamos una ssh
 
+//Para enviar del cliente al servidor
+```bash
+scp -P [puerto] [ficheros_a_enviar]user@ip:[carpeta]----> del servidor
+```
+//Para enviar del servidor al cliente
+```bash
+scp -P [puerto] user@ip:[carpeta/ficheros] /rutaCliente --------->
+```
+
+Crear un script que le pase como parámetro una dirección ip. Si la dirección ip existe(ping)
+copiará un fichero llamado datos.txt del equipo cliente al equipo remoto. Si el fichero 
+datos.txt no existe mostrará mensaje de error y no hará nada.
+
+=============================================================================================
+
+#! /bin/bash
+
+#--------------Declaración de variable----------------
+
+read -p "Introduzca una dirección ip" ip
+hacerPing "ping $ip"
+
+
+if (( $hacerPing | grep "ms$" ))
+then 
+  if [ ! -e /tmp/archivo.txt ]; then
+   echo "El archivo no existe"
+  else
+   cp /home/usuarioCliente/datos.txt /home/usuarioServidor  
+  fi
+fi
+
 
