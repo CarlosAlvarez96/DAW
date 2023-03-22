@@ -3,11 +3,15 @@ package Clases;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 //Cuando quiera que una clase se guarde en la base de datos:
 //1. Pongo @Entity
 //2. La clase debe implementar la interfazz Serializable
@@ -23,6 +27,27 @@ public class Corredor implements Serializable {
     private int id;
     private String nombre;
     private LocalDate fechaNacimiento;
+    @ManyToOne
+    private Equipo equipo;
+    @ManyToMany
+    private List<Carrera> carreras;
+
+    public List<Carrera> getCarreras() {
+        return carreras;
+    }
+
+    public void setCarreras(List<Carrera> carreras) {
+        this.carreras = carreras;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+    
     public Corredor(){
         
     }

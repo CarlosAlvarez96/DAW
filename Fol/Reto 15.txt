@@ -1,0 +1,36 @@
+
+Prestaciones familiares: 
+	Prestación económica por hijo o menor acogido a cargo.
+	Prestación económica por nacimiento/adopción de hijo, en supuestos de familias numerosas, monoparentales y en los casos de madres con discapacidad.
+	Prestación económica por parto o adopción múltiples.
+	Prestación no económica.
+Prestaciones por desempleo (SEPE)
+	Prestación por cese de actividad de los trabajadores autónomos.
+	Servicios sociales (IMSERSO u órganos competentes de las Comunidades Autónomas con competencias transferidas).
+Prestaciones del Seguro Obligatorio de Vejez e Invalidez (SOVI):
+	Vejez SOVI.
+	Invalidez SOVI.
+	Viudedad SOVI.
+	Prestaciones del Seguro Escolar.
+
+Asistencia sanitaria: El sistema de salud público en España proporciona asistencia sanitaria gratuita a todas las personas con residencia legal en el país. Los requisitos pueden variar según la situación personal de cada individuo, como su estatus migratorio o la existencia de un seguro privado.
+
+Incapacidad temporal: Esta prestación cubre la pérdida de ingresos durante el período en que un trabajador está temporalmente incapacitado para trabajar debido a una enfermedad o accidente. La cuantía de la prestación es del 60% de la base reguladora y se paga a partir del cuarto día de la baja.
+
+Riesgo durante el embarazo y durante la lactancia natural: Se trata de una prestación para trabajadoras que no pueden continuar trabajando debido a un riesgo grave para su salud o la de su futuro hijo durante el embarazo o la lactancia. La cuantía de la prestación es del 100% de la base reguladora.
+
+Nacimiento y cuidado de menor: Esta prestación se otorga a las madres trabajadoras durante el período de descanso por maternidad, que es de 16 semanas en España. La cuantía de la prestación es del 100% de la base reguladora.
+
+Cuidado de menores afectados por cáncer u otra enfermedad grave: Esta prestación se concede a los padres o tutores de un menor que padece una enfermedad grave y requiere cuidados intensivos. La cuantía de la prestación es del 100% de la base reguladora.
+
+Corresponsabilidad en el cuidado del lactante: Se trata de una prestación para los progenitores trabajadores que reducen su jornada laboral para cuidar a un hijo menor de 12 meses. La cuantía de la prestación depende de la reducción de la jornada y se calcula en función de la base reguladora.
+
+Incapacidad permanente: Esta prestación se otorga a los trabajadores que no pueden continuar trabajando debido a una discapacidad permanente. La cuantía de la prestación depende del grado de discapacidad y de la base reguladora.
+
+Lesiones permanentes no invalidantes: Esta prestación se otorga a los trabajadores que sufren lesiones permanentes que no les impiden trabajar pero que reducen su capacidad laboral. La cuantía de la prestación depende del grado de reducción de la capacidad laboral y de la base reguladora.
+
+Jubilación: Esta prestación se otorga a los trabajadores que han alcanzado la edad de jubilación y han cotizado lo suficiente para cumplir con los requisitos para recibir una pensión. La cuantía de la pensión depende de la base reguladora y del tiempo cotizado.
+
+Muerte y supervivencia: Existen varias prestaciones en esta categoría, incluyendo el auxilio por defunción, la pensión de viudedad, la prestación temporal de viudedad, la pensión de orfandad, la prestación de orfandad por violencia contra la mujer, la pensión en favor de familiares y el subsidio en favor de familiares.
+
+Indemnización especial a tanto alzado, en los supuestos de accidente de trabajo y enfermedad profesional: Esta prestación se otorga a los trabajadores que han sufrido un accident
