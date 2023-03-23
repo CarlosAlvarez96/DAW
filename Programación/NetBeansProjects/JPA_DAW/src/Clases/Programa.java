@@ -19,9 +19,68 @@ import javax.persistence.Query;
 public class Programa {
     
     public static void main(String[] args) {
-        main7(args);
+        main10(args);
     }
     
+    //Crea dos carreras y apunta 3 corredores a cada carrera
+    public static void main10(String[] args) {
+        EntityManager em = Persistence.createEntityManagerFactory("CARRERAS").createEntityManager();
+         Carrera c1 = new Carrera("Carrera hlanz", LocalDate.now(),1);
+         Carrera c2 = new Carrera("Carrera de los maestros", LocalDate.now(),2);
+         
+         Corredor a1 = new Corredor("Pablo", LocalDate.now());
+         Corredor a2 = new Corredor("Pedro", LocalDate.now());
+         Corredor a3 = new Corredor("Ambrosio", LocalDate.now());
+         c1.getCorredores().addAll(List.of(a1,a2,a3));
+         c2.getCorredores().addAll(List.of(a1,a2));
+         a1.getCarreras().addAll(List.of(c1,c2));
+         a2.getCarreras().addAll(List.of(c1,c2));
+         a3.getCarreras().addAll(List.of(c1));
+         
+         em.getTransaction().begin();
+         em.persist(c1);
+         em.persist(c2);
+         em.persist(a1);
+         em.persist(a2);
+         em.persist(a3);
+         em.getTransaction().commit();
+         em.close();
+    }
+    // Creamos un equipo con 3 corredores
+    public static void main9(String[] args) {
+        EntityManager em= Persistence.createEntityManagerFactory("CORREDORES").createEntityManager();
+        Equipo e= new Equipo("Hlanz 1daw");
+        
+        Corredor c1 = new Corredor("Carlos", LocalDate.now());
+        Corredor c2= new Corredor("Patrik", LocalDate.now());
+        Corredor c3= new Corredor("Tarik", LocalDate.now());
+        e.getCorredores().add(c1);
+        e.getCorredores().add(c2);
+        e.getCorredores().add(c3);
+        c1.setEquipo(e);
+        em.close();
+    }
+    
+    //Crea un corredor profesional con un carnet
+    public static void main8(String[] args) {
+        EntityManager em = Persistence.createEntityManagerFactory("CARRERAS").createEntityManager();
+        
+        CorredorProfesional c = new CorredorProfesional(
+                                              "María",
+                                                LocalDate.now().minusYears(25),
+                                                4,
+                                                                        "HLANZ");
+        
+        Carnet ca = new Carnet(LocalDate.now());
+        c.setCarnet(ca);
+        ca.setCorredor(c);
+        
+        em.getTransaction().begin();
+        em.persist(c);
+        em.persist(ca);
+        em.getTransaction().commit();
+        em.close();
+    }
     public static void main7(String[] args) {
         EntityManager em = Persistence.createEntityManagerFactory("CARRERAS").createEntityManager();
         Corredor c1 = new Corredor("Manuel", LocalDate.of(2000, 2, 12));
