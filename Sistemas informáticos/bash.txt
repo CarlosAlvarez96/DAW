@@ -1,0 +1,116 @@
+cd: comando utilizado para cambiar el directorio actual.
+
+Sintaxis: cd [ruta_del_directorio]
+Parámetros comunes:
+-P: hace que se sigan las referencias simbólicas.
+-L: hace que no se sigan las referencias simbólicas.
+cp: comando utilizado para copiar archivos o directorios.
+
+Sintaxis: cp [archivo_origen] [archivo_destino]
+Parámetros comunes:
+-r: copia los directorios de forma recursiva.
+-v: muestra información detallada de la copia.
+rm: comando utilizado para eliminar archivos o directorios.
+
+Sintaxis: rm [archivo_a_eliminar]
+Parámetros comunes:
+-f: elimina sin preguntar confirmación.
+-r: elimina directorios y su contenido de forma recursiva.
+mkdir: comando utilizado para crear directorios.
+
+Sintaxis: mkdir [nombre_del_directorio]
+Parámetros comunes:
+-p: crea directorios padres si no existen.
+echo: comando utilizado para imprimir texto en la consola o en un archivo.
+
+Sintaxis: echo [texto_a_imprimir]
+Parámetros comunes:
+-n: evita que se imprima el salto de línea al final.
+| (pipe): operador utilizado para redirigir la salida de un comando como entrada de otro.
+
+Sintaxis: comando1 | comando2
+: operador utilizado para redirigir la salida de un comando como contenido al final de un archivo existente.
+
+Sintaxis: comando >> archivo
+tar: comando utilizado para comprimir o descomprimir archivos y directorios.
+
+Sintaxis: tar [opciones] archivo.tar [archivos_a_comprimir]
+Parámetros comunes:
+-c: crea un archivo comprimido.
+-x: extrae un archivo comprimido.
+-v: muestra información detallada de la operación.
+-z: utiliza el algoritmo gzip para comprimir el archivo.
+tr: comando utilizado para transformar o borrar caracteres en un archivo.
+
+Sintaxis: tr [caracteres_a_transformar] [caracteres_transformados] < archivo_origen > archivo_destino
+find: comando utilizado para buscar archivos o directorios.
+
+Sintaxis: find [ruta_de_inicio] [opciones] [patrón_de_búsqueda]
+Parámetros comunes:
+-name: busca archivos con el nombre indicado.
+-type: busca archivos de un tipo específico.
+-size: busca archivos de un tamaño específico.
+-mtime: busca archivos modificados en los últimos días.
+grep: comando utilizado para buscar texto en archivos.
+
+Sintaxis: grep [opciones] [patrón_de_búsqueda] [archivo]
+Parámetros comunes:
+-i: ignora las mayúsculas y minúsculas.
+-v: muestra las líneas que no contienen el patrón.
+sort: comando utilizado para ordenar líneas de texto.
+
+Sintaxis:
+
+
+
+Carlos Álvarez Martín
+continua
+sort: Este comando se utiliza para ordenar el contenido de un archivo. La sintaxis básica es:
+
+sort archivo
+
+Para ordenar el archivo en orden inverso, se utiliza el parámetro -r:
+
+sort -r archivo
+
+Para ordenar el archivo por una columna específica, se utiliza el parámetro -k, seguido del número de la columna:
+
+sort -k 2 archivo
+
+Para ordenar el archivo en orden numérico, se utiliza el parámetro -n:
+
+sort -n archivo
+
+tail: Este comando se utiliza para mostrar las últimas líneas de un archivo. La sintaxis básica es:
+
+tail archivo
+
+Para mostrar un número específico de líneas, se utiliza el parámetro -n, seguido del número de líneas que se desea mostrar:
+
+tail -n 10 archivo
+
+Para seguir mostrando nuevas líneas que se añadan al archivo en tiempo real, se utiliza el parámetro -f:
+
+tail -f archivo
+
+head: Este comando se utiliza para mostrar las primeras líneas de un archivo. La sintaxis básica es:
+
+head archivo
+
+Para mostrar un número específico de líneas, se utiliza el parámetro -n, seguido del número de líneas que se desea mostrar:
+
+head -n 10 archivo
+
+sed: Este comando se utiliza para realizar ediciones en un archivo. La sintaxis básica es:
+
+sed 's/patron/nuevo_patron/g' archivo
+
+El parámetro 's' indica que se va a realizar una sustitución. 'patron' es la cadena de caracteres que se va a buscar y 'nuevo_patron' es la cadena de caracteres que se va a poner en su lugar. El parámetro 'g' indica que se van a realizar todas las sustituciones posibles en el archivo.
+
+Para realizar la sustitución sólo en una línea específica, se utiliza el número de línea antes del comando 's':
+
+sed '3s/patron/nuevo_patron/g' archivo
+
+Para realizar la sustitución en todas las líneas excepto en las que contengan cierta cadena, se utiliza el parámetro -v:
+
+sed '/cadena/!s/patron/nuevo_patron/g' archivo
